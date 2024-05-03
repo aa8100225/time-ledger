@@ -1,0 +1,9 @@
+{
+  "Test": {
+    "title": "你好"
+  },
+  "LocaleSwitcher": {
+    "label": "Change language",
+    "locale": "{locale, select, zh {Chinese} en {English} other {Unknown}}"
+  }
+}
