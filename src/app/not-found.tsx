@@ -1,18 +1,8 @@
-import Link from "next/link";
-
 export default function NotFound() {
   return (
     <>
       <html lang="en">
-        <body>
-          {" "}
-          <div>
-            <h2>Not Found</h2>
-            <p>Could not find requested resource</p>
-            <Link href="/">Return Home</Link>
-            {/* <Error statusCode={404} /> */}
-          </div>
-        </body>
+        <body>404</body>
       </html>
     </>
   );

@@ -15,6 +15,10 @@ import {
 } from "redux-persist";
 import { myLoggerMiddleware } from "@/redux/middlewares/myLogger";
 import { apiService } from "@/redux/api/base";
+import {
+  ITimeLedgerState,
+  timeLedgerReducer,
+} from "./features/timeLedger/timeLedgerSlice";
 
 // server-side rendering  no operation ( noop )
 const createNoopStorage = () => {
@@ -39,17 +43,19 @@ const storage =
 const rootReducer = combineReducers({
   counter: counterReducer,
   auth: authReducer,
+  timeLedger: timeLedgerReducer,
   [apiService.reducerPath]: apiService.reducer,
 }) as Reducer<{
   counter: ICounterState;
   auth: IAuthState;
+  timeLedger: ITimeLedgerState;
   [apiService.reducerPath]: ReturnType<typeof apiService.reducer>;
 }>;
 
 const persistConfig = {
   key: "root",
   storage,
-  whitelist: ["auth"], // rootReducer key
+  whitelist: ["auth", "timeLedger"], // rootReducer key
 };
 
 const persistedReducer = persistReducer(persistConfig, rootReducer);

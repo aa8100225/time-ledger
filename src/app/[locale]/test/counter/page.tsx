@@ -68,26 +68,26 @@ export default function Page() {
   return (
     <div className="min-h-screen bg-gray-50 px-4 sm:px-6 md:px-8">
       <div className="mx-auto max-w-4xl">
-        <h1 className="text-xl font-bold mb-4">Counter Page</h1>
+        <h1 className="mb-4 text-xl font-bold">Counter Page</h1>
         <div className="space-y-4">
           <div className="flex flex-wrap items-center justify-between gap-4">
             <p>Current Count: {count}</p>
             <p>{t("title")} </p>
             <LocaleSwitcher></LocaleSwitcher>
             <button
-              className="px-4 py-2 bg-green-500 text-white rounded"
+              className="rounded bg-green-500 px-4 py-2 text-white"
               onClick={() => dispatch(increment())}
             >
               Increment
             </button>
             <button
-              className="px-4 py-2 bg-red-500 text-white rounded"
+              className="rounded bg-red-500 px-4 py-2 text-white"
               onClick={() => dispatch(decrement())}
             >
               Decrement
             </button>
             <button
-              className="px-4 py-2 bg-blue-500 text-white rounded"
+              className="rounded bg-blue-500 px-4 py-2 text-white"
               onClick={handleFetchCounter}
             >
               Fetch Counter {data?.randomNumber ?? "undefined"}
@@ -95,7 +95,7 @@ export default function Page() {
           </div>
           <div className="flex flex-wrap justify-between gap-4">
             <button
-              className="px-4 py-2 bg-yellow-500 text-white rounded"
+              className="rounded bg-yellow-500 px-4 py-2 text-white"
               onClick={handleUnauthorized}
             >
               Trigger 401 Error
@@ -107,7 +107,7 @@ export default function Page() {
           </div>
           <div className="flex flex-wrap justify-between gap-4">
             <button
-              className="px-4 py-2 bg-orange-500 text-white rounded"
+              className="rounded bg-orange-500 px-4 py-2 text-white"
               onClick={handleBadRequest}
             >
               Trigger Bad Request
@@ -119,7 +119,7 @@ export default function Page() {
           </div>
           <div className="flex flex-wrap justify-between gap-4">
             <button
-              className="px-4 py-2 bg-purple-500 text-white rounded"
+              className="rounded bg-purple-500 px-4 py-2 text-white"
               onClick={handleCreateCounter}
             >
               Create Counter
@@ -128,7 +128,7 @@ export default function Page() {
           </div>
           <div className="flex flex-wrap justify-between gap-4">
             <button
-              className="px-4 py-2 bg-gray-500 text-white rounded"
+              className="rounded bg-gray-500 px-4 py-2 text-white"
               onClick={handleTimeout}
             >
               Simulate Timeout
@@ -139,25 +139,25 @@ export default function Page() {
           </div>
           <div className="flex flex-wrap justify-between gap-4">
             <button
-              className="px-4 py-2 bg-green-500 text-white rounded"
+              className="rounded bg-green-500 px-4 py-2 text-white"
               onClick={handleShowSuccess}
             >
               Show Success Toast
             </button>
             <button
-              className="px-4 py-2 bg-red-500 text-white rounded"
+              className="rounded bg-red-500 px-4 py-2 text-white"
               onClick={handleShowError}
             >
               Show Error Toast
             </button>
             <button
-              className="px-4 py-2 bg-yellow-500 text-white rounded"
+              className="rounded bg-yellow-500 px-4 py-2 text-white"
               onClick={handleShowInfo}
             >
               Show Info Toast
             </button>
             <button
-              className="px-4 py-2 bg-orange-500 text-white rounded"
+              className="rounded bg-orange-500 px-4 py-2 text-white"
               onClick={handleShowWarning}
             >
               Show Warning Toast
@@ -167,7 +167,7 @@ export default function Page() {
         <div className="mt-4 flex flex-wrap justify-between gap-4">
           <Link
             href="/test/auth"
-            className="px-4 py-2 bg-blue-500 text-white rounded"
+            className="rounded bg-blue-500 px-4 py-2 text-white"
           >
             Go to Auth
           </Link>

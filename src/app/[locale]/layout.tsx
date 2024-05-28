@@ -5,6 +5,7 @@ import { ReduxProvider } from "@/provider/reduxProvider";
 import ToastProvider from "@/provider/toastProvider";
 import "react-toastify/dist/ReactToastify.css";
 import { NextIntlClientProvider, useMessages } from "next-intl";
+import { NextUIProvider } from "@nextui-org/react";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {

@@ -1,0 +1,59 @@
+{
+  "Test": {
+    "title": "你好"
+  },
+  "LocaleSwitcher": {
+    "label": "Change language",
+    "locale": "{locale, select, zh_TW {繁體中文} en {English} other {Unknown}}"
+  },
+  "TimeLedger": {
+    "createTask": "揮霍生命吧",
+    "slogan": "滴答、滴答、滴答......接下來你決定做些什麼？",
+    "unknownError": "發生了未知錯誤。",
+    "cancelConfirmTitle": "取消確認",
+    "cancelConfirmBody": "您確定要取消任務嗎？此操作將無法恢復。",
+    "confirmButton": "確認",
+    "cancelButton": "否",
+    "timeUpTitle": "時間到了",
+    "timeUpBody": "倒計時已結束。您要繼續嗎？",
+    "continueButton": "繼續",
+    "stopButton": "停止",
+    "taskTitle": "任務主旨",
+    "taskDescription": "任務說明",
+    "timeSetting": "時間設置",
+    "enterTitle": "輸入您的任務主旨",
+    "enterDescription": "輸入您的任務說明",
+    "hours": "時",
+    "minutes": "分",
+    "seconds": "秒",
+    "countingDown": "倒數計時",
+    "execute": "任務開始",
+    "pause": "暫停",
+    "continue": "繼續",
+    "finished": "完成",
+    "cancel": "取消",
+    "review": "心得與檢討",
+    "totalSpend": "總花費時間",
+    "selfAssessment": "自我評估任務完成百分比",
+    "enterReview": "輸入您的心得與檢討",
+    "undo": "撤回",
+    "printReceipt": "列印收據",
+    "startNewTask": "開始新任務",
+    "ifMistakenlyFinishedTooltip": "如果您誤觸任務完成，您可以返回到上一步狀態。",
+    "lifeSpentReceipt": "時間流逝收據",
+    "taskTitleLabel": "任務主旨",
+    "totalTimeSpentLabel": "總花費時間",
+    "completionPercentageLabel": "任務完成百分比",
+    "nothing": "無",
+    "invalidTimeSettings": "無效的時間設置。小時必須 >= 0，分鐘和秒必須在 0 到 59 之間。",
+    "taskTitleError": "任務主旨未設定或字數超過限制 50。",
+    "taskDescriptionError": "任務說明字數超過限制 200。",
+    "taskTimeNotSet": "任務時間未設定。"
+  },
+  "notFound": {
+    "pageTitle": "404 頁面未找到",
+    "pageDescription": "抱歉，您所尋找的頁面不存在。",
+    "backHomeButton": "返回首頁"
+  },
+  "Common": {}
+}

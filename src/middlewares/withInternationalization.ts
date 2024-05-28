@@ -3,8 +3,9 @@ import { NextRequest, NextFetchEvent, NextResponse } from "next/server";
 import createIntlMiddleware from "next-intl/middleware";
 
 const intlMiddleware = createIntlMiddleware({
-  locales: ["en", "zh"],
+  locales: ["en", "zh-TW"],
   defaultLocale: "en",
+  localePrefix: "as-needed",
   localeDetection: false,
 });
 

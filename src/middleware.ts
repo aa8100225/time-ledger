@@ -14,9 +14,9 @@ export default stackMiddlewares([
 export const config = {
   // Matcher ignoring `/_next/` and `/api/`
   matcher: [
-    "/((?!api|_next/static|_next/image|favicon.ico).*)",
+    "/((?!api|_next/static|_next/image|favicon.ico|sounds|images).*)",
     "/",
-    "/(en|zh)/:page*",
+    "/(en|zh-TW)/:page*",
   ],
   missing: [
     { type: "header", key: "next-router-prefetch" },

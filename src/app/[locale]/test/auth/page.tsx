@@ -13,18 +13,18 @@ export default function Page() {
       <h1 className="text-xl font-bold">Auth Page</h1>
       <p>{isAuth ? "Logged In" : "Logged Out"}</p>
       <button
-        className="px-4 py-2 bg-blue-500 text-white rounded mr-2"
+        className="mr-2 rounded bg-blue-500 px-4 py-2 text-white"
         onClick={() => dispatch(setAuthState(true))}
       >
         Login
       </button>
       <button
-        className="px-4 py-2 bg-red-500 text-white rounded"
+        className="rounded bg-red-500 px-4 py-2 text-white"
         onClick={() => dispatch(setAuthState(false))}
       >
         Logout
       </button>
-      <div className="mt-4 px-4 py-2 bg-green-500 text-white rounded">
+      <div className="mt-4 rounded bg-green-500 px-4 py-2 text-white">
         <Link href="/test/counter">Go to Counter</Link>
       </div>
     </div>

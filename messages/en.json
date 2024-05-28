@@ -4,6 +4,56 @@
   },
   "LocaleSwitcher": {
     "label": "Change language",
-    "locale": "{locale, select, zh {Chinese} en {English} other {Unknown}}"
-  }
+    "locale": "{locale, select, zh_TW {Traditional Chinese} en {English} other {Unknown}}"
+  },
+  "TimeLedger": {
+    "createTask": "Spend Your Life",
+    "slogan": "Tick tock, tick tock... What will you decide to do next?",
+    "unknownError": "An unknown error occurred.",
+    "cancelConfirmTitle": "Cancel Confirm",
+    "cancelConfirmBody": "Are you sure you want to cancel the task? It will not be recoverable.",
+    "confirmButton": "Confirm",
+    "cancelButton": "No",
+    "timeUpTitle": "Time's Up",
+    "timeUpBody": "The countdown has finished. Do you want to continue?",
+    "continueButton": "Continue",
+    "stopButton": "Stop",
+    "taskTitle": "Title",
+    "taskDescription": "Description",
+    "timeSetting": "Time Setting",
+    "enterTitle": "Enter your Title",
+    "enterDescription": "Enter your Description",
+    "hours": "h",
+    "minutes": "m",
+    "seconds": "s",
+    "countingDown": "Counting Down",
+    "execute": "Execute",
+    "pause": "Pause",
+    "continue": "Continue",
+    "finished": "Finished",
+    "cancel": "Cancel",
+    "review": "Review",
+    "totalSpend": "Total Spend",
+    "selfAssessment": "Self-Assessment Completion Percentage",
+    "enterReview": "Enter your review",
+    "undo": "Undo",
+    "printReceipt": "Print Receipt",
+    "startNewTask": "Start New Task",
+    "ifMistakenlyFinishedTooltip": "If you mistakenly finished, you can return to the previous state.",
+    "lifeSpentReceipt": "Life Spent Receipt",
+    "taskTitleLabel": "Task Title",
+    "totalTimeSpentLabel": "Total Time Spent",
+    "completionPercentageLabel": "Completion Percentage",
+    "nothing": "nothing",
+    "invalidTimeSettings": "Invalid time settings. Hours must be >= 0, and minutes and seconds must be between 0 and 59.",
+    "taskTitleError": "Task title is not set or exceeds the limit of 50 characters.",
+    "taskDescriptionError": "Task description exceeds the limit of 200 characters.",
+    "taskTimeNotSet": "Task time is not set."
+  },
+  "notFound": {
+    "pageTitle": "404 Page Not Found",
+    "pageDescription": "Sorry, the page you are looking for does not exist.",
+    "backHomeButton": "Back Home"
+  },
+  "Common": {}
 }

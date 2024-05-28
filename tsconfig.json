@@ -18,7 +18,8 @@
       }
     ],
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "use-sound": ["./generated-types/"]
     },
     "typeRoots": ["./node_modules/@types", "./src/types"]
   },

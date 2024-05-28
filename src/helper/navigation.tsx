@@ -3,13 +3,13 @@ import { createLocalizedPathnamesNavigation } from "next-intl/navigation";
 import { Pathnames } from "next-intl/navigation";
 
 const defaultLocale = "en" as const;
-const locales = ["en", "zh"] as const;
+const locales = ["en", "zh-TW"] as const;
 
 const pathnames = {
   "/": "/",
   "/pathnames": {
     en: "/pathnames",
-    zh: "/pathnames",
+    "zh-TW": "/pathnames",
   },
 } satisfies Pathnames<typeof locales>;
 

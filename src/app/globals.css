@@ -59,3 +59,24 @@ body {
     text-wrap: balance;
   }
 }
+
+@layer base {
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+
+@media screen {
+  .print-only {
+    display: none;
+  }
+}
+
+@media print {
+  .print-only {
+    display: flex;
+    font-size: 12px;
+  }
+}
