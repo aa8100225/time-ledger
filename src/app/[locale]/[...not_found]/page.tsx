@@ -4,7 +4,6 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 
 export default function NotFoundCatchAll() {
-  //   notFound();
   const t = useTranslations("notFound");
   const locale = useLocale();
   return (
@@ -17,6 +16,7 @@ export default function NotFoundCatchAll() {
           width={300}
           height={300}
           objectFit="cover"
+          priority={true}
           className="rounded-lg shadow-lg"
         />
         <div className="absolute inset-0 rounded-lg border-4 border-green-100 blur-[20px]"></div>
