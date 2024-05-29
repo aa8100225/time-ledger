@@ -23,7 +23,7 @@ Time Ledger is an advanced task management application that functions similarly 
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/time-ledger.git
+   git clone https://github.com/aa8100225/time-ledger.git
    cd time-ledger
    ```
 
@@ -85,4 +85,4 @@ We welcome contributions! Please read our [Contributing Guide](CONTRIBUTING.md) 
 
 ## Contact
 
-For any inquiries, please reach out to us at [contact@timeledger.com](mailto:contact@timeledger.com).
+For any inquiries, please reach out to us at [sanceltum@gmail.com](mailto:sanceltum@gmail.com).
