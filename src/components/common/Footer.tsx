@@ -41,7 +41,7 @@ const Footer = () => {
             </Link>
           </div>
           <span className="self-end text-gray-300 md:self-center">
-            © 2024 Sanctum Celestials. All rights reserved.
+            © 2024 SanCeltum. All rights reserved.
           </span>
         </div>
       </div>

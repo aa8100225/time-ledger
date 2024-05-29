@@ -55,5 +55,24 @@
     "pageDescription": "抱歉，您所尋找的頁面不存在。",
     "backHomeButton": "返回首頁"
   },
-  "Common": {}
+  "Common": {},
+  "Metadata": {
+    "title": "時間帳簿 - SanCeltum",
+    "description": "提高你的生產力，使用時間帳簿，一個先進的類似番茄鐘的計時器，記錄你的任務並生成詳細的時間收據。",
+    "keywords": "時間管理, 番茄鐘, 任務追蹤, 生產力, 時間帳簿, 時間收據, 任務日誌",
+    "openGraph": {
+      "title": "時間帳簿 - 隨心所欲的時間和任務管理",
+      "description": "無論花不花，時間它都在流逝著。使用 SanCeltum 的時間帳簿，隨心所欲、恣意、有意識的揮霍一次吧。",
+      "images": {
+        "alt": "時間帳簿應用"
+      }
+    },
+    "twitter": {
+      "title": "時間帳簿 - 隨心所欲的時間和任務管理",
+      "description": "無論花不花，時間它都在流逝著。使用 SanCeltum 的時間帳簿，隨心所欲、恣意、有意識的揮霍一次吧。",
+      "images": {
+        "alt": "時間帳簿應用"
+      }
+    }
+  }
 }

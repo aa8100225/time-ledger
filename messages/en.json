@@ -55,5 +55,24 @@
     "pageDescription": "Sorry, the page you are looking for does not exist.",
     "backHomeButton": "Back Home"
   },
-  "Common": {}
+  "Common": {},
+  "Metadata": {
+    "title": "Time Ledger - SanCeltum",
+    "description": "Enhance your productivity with Time Ledger, a sophisticated Pomodoro-like timer that logs your tasks and generates detailed time receipts.",
+    "keywords": "time management, Pomodoro timer, task tracking, productivity, time ledger, time receipts, task log",
+    "openGraph": {
+      "title": "Time Ledger - Free-spirited Time And Task Management",
+      "description": "Whether you spend it or not, time keeps flowing. Use SanCeltum's Time Ledger to indulge freely, consciously, and enjoy every moment.",
+      "images": {
+        "alt": "Time Ledger Application"
+      }
+    },
+    "twitter": {
+      "title": "Time Ledger - Free-spirited Time And Task Management",
+      "description": "Whether you spend it or not, time keeps flowing. Use SanCeltum's Time Ledger to indulge freely, consciously, and enjoy every moment.",
+      "images": {
+        "alt": "Time Ledger Application"
+      }
+    }
+  }
 }
