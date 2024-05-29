@@ -1,4 +1,3 @@
-import { ReduxProvider } from "@/provider/reduxProvider";
 import type { Metadata } from "next";
 import type { Viewport } from "next";
 

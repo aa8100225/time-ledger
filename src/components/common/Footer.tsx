@@ -26,7 +26,10 @@ const Footer = () => {
           <Link href="/" className="hover:text-gray-300" locale={locale}>
             Others
           </Link>
-          <Link href="/" className="hover:text-gray-300" locale={locale}>
+          <Link
+            href={locale ? `/${locale}/about` : "/about"}
+            className="hover:text-gray-300"
+          >
             About
           </Link>
         </div>
