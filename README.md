@@ -2,13 +2,16 @@
 
 Time Ledger is an advanced task management application that functions similarly to a Pomodoro timer but with richer features. It allows users to manage tasks, track time, and generate receipts for completed tasks.
 
+## Live Demo
+
+You can try out Time Ledger [here](https://time-ledger.vercel.app).
+
 ## Features
 
 - Task management with time tracking
 - Generate receipts for completed tasks
 - Multi-language support (English and Traditional Chinese)
 - Audio notifications
-- Beautiful UI with animations
 
 ## Table of Contents
 
