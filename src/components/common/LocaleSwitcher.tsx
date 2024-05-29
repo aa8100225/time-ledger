@@ -1,7 +1,6 @@
 import { useLocale, useTranslations } from "next-intl";
 import LocaleSwitcherSelect from "./LocaleSwitcherSelect";
-
-const locales: string[] = ["en", "zh-TW"];
+import { locales } from "@/config/config";
 
 export default function LocaleSwitcher() {
   const t = useTranslations("LocaleSwitcher");

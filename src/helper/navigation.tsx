@@ -1,9 +1,7 @@
 import { createLocalizedPathnamesNavigation } from "next-intl/navigation";
 
 import { Pathnames } from "next-intl/navigation";
-
-const defaultLocale = "en" as const;
-const locales = ["en", "zh-TW"] as const;
+import { locales } from "@/config/config";
 
 const pathnames = {
   "/": "/",

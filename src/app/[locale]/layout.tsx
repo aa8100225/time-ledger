@@ -3,6 +3,7 @@ import "../globals.css";
 import { ReduxProvider } from "@/provider/reduxProvider";
 import ToastProvider from "@/provider/toastProvider";
 import { NextIntlClientProvider, useMessages } from "next-intl";
+import { NextUIProvider } from "@nextui-org/react";
 const inter = Inter({ subsets: ["latin"] });
 
 interface RootLayoutProps {
@@ -23,7 +24,7 @@ export default function RootLayout({
         <body className={inter.className}>
           <ToastProvider>
             <NextIntlClientProvider messages={messages}>
-              {children}
+              <NextUIProvider>{children}</NextUIProvider>
             </NextIntlClientProvider>
           </ToastProvider>
         </body>

@@ -1,5 +1,3 @@
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useLocale } from "next-intl";
 import Link from "next/link";
 
@@ -27,6 +25,9 @@ const Footer = () => {
         <div className="mb-1 flex flex-wrap justify-center space-x-2 md:justify-start md:space-x-4">
           <Link href="/" className="hover:text-gray-300" locale={locale}>
             Others
+          </Link>
+          <Link href="/" className="hover:text-gray-300" locale={locale}>
+            About
           </Link>
         </div>
         <div className="flex flex-wrap items-end justify-center space-x-4 md:items-center">

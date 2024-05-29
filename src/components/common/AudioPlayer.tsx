@@ -73,4 +73,6 @@ const AudioPlayer = forwardRef<AudioPlayerHandles, AudioPlayerProps>(
   }
 );
 
+AudioPlayer.displayName = "AudioPlayer";
+
 export default AudioPlayer;

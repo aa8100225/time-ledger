@@ -1,10 +1,11 @@
 import { MiddlewareFactory } from "./types";
 import { NextRequest, NextFetchEvent, NextResponse } from "next/server";
 import createIntlMiddleware from "next-intl/middleware";
+import { locales, defaultLocale } from "@/config/config";
 
 const intlMiddleware = createIntlMiddleware({
-  locales: ["en", "zh-TW"],
-  defaultLocale: "en",
+  locales: locales,
+  defaultLocale: defaultLocale,
   localePrefix: "as-needed",
   localeDetection: false,
 });

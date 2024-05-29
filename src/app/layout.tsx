@@ -1,9 +1,14 @@
-import { NextUIProvider } from "@nextui-org/react";
+import { ReduxProvider } from "@/provider/reduxProvider";
 import type { Metadata } from "next";
 
 import { getTranslations } from "next-intl/server";
+interface Params {
+  params: {
+    locale: string;
+  };
+}
 
-export async function generateMetadata({ params: { locale } }) {
+export async function generateMetadata({ params: { locale } }: Params) {
   const t = await getTranslations({ locale, namespace: "Metadata" });
 
   return {
@@ -63,11 +68,6 @@ export async function generateMetadata({ params: { locale } }) {
   };
 }
 
-export const theme = {
-  colorScheme: "light",
-  themeColor: "#ffffff",
-};
-
 export const viewport = {
   width: "device-width",
   initialScale: 1,
@@ -80,7 +80,7 @@ export default function RootLayout({
 }>) {
   return (
     <>
-      <NextUIProvider>{children}</NextUIProvider>
+      {children}
     </>
   );
 }

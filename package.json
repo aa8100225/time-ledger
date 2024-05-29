@@ -2,7 +2,7 @@
   "name": "time-ledger",
   "version": "0.1.0",
   "private": true,
-  "description": "",
+  "description": "Time Ledger is an advanced task management application that functions like a Pomodoro timer but with richer features. It allows users to manage tasks, track time, and generate receipts for completed tasks.",
   "license": "MIT",
   "engines": {
     "node": ">=20.12.0",
@@ -16,6 +16,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@next/bundle-analyzer": "^14.2.3",
     "@nextui-org/react": "^2.3.6",
     "@onedoc/react-print": "^0.1.133",
     "@reduxjs/toolkit": "^2.2.3",
@@ -31,10 +32,12 @@
     "react": "^18",
     "react-dom": "^18",
     "react-howler": "^5.2.0",
+    "react-icons": "^5.2.1",
     "react-redux": "^9.1.1",
     "react-to-print": "^2.15.1",
     "react-toastify": "^10.0.5",
     "redux-persist": "^6.0.0",
+    "sharp": "^0.33.4",
     "use-sound": "^4.0.1"
   },
   "devDependencies": {
@@ -42,7 +45,6 @@
     "@fortawesome/free-brands-svg-icons": "^6.5.2",
     "@fortawesome/free-solid-svg-icons": "^6.5.2",
     "@fortawesome/react-fontawesome": "^0.2.0",
-    "@react-icons/all-files": "^4.1.0",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
@@ -51,7 +53,6 @@
     "eslint-config-next": "14.2.2",
     "postcss": "^8",
     "prettier-plugin-tailwindcss": "^0.5.14",
-    "react-icons": "^5.2.1",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
   }

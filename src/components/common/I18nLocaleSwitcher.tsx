@@ -12,12 +12,11 @@ import { useLocale, useTranslations } from "next-intl";
 import { usePathname, useRouter } from "@/helper/navigation";
 import { useParams } from "next/navigation";
 import { FaCheck } from "react-icons/fa";
+import { locales } from "@/config/config";
 interface IDropdownOption {
   value: string;
   label: string;
 }
-
-const locales: string[] = ["en", "zh-TW"];
 
 const I18nLocaleSwitcher = () => {
   const t = useTranslations("LocaleSwitcher");
