@@ -1,4 +1,5 @@
 import { Inter } from "next/font/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import "../globals.css";
 import { ReduxProvider } from "@/provider/reduxProvider";
 import ToastProvider from "@/provider/toastProvider";
@@ -29,6 +30,7 @@ export default function RootLayout({
           </ToastProvider>
         </body>
       </ReduxProvider>
+      <GoogleAnalytics gaId={process.env.GAID!} />
     </html>
   );
 }
