@@ -23,7 +23,10 @@ const Footer = () => {
     <footer className="bg-gray-800 py-2 text-white">
       <div className="mx-auto max-w-7xl px-2">
         <div className="mb-1 flex flex-wrap justify-center space-x-2 md:justify-start md:space-x-4">
-          <Link href="/" className="hover:text-gray-300" locale={locale}>
+          <Link
+            href={locale ? `/${locale}/others` : "/others"}
+            className="hover:text-gray-300"
+          >
             Others
           </Link>
           <Link
