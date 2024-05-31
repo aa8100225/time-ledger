@@ -54,6 +54,7 @@ export default function Page() {
     if (isStringEmpty(inputText)) {
       throw new Error("Input is empty");
     }
+    inputText = inputText.trim();
     const srcMatches = inputText.match(srcRegex);
     const imageURL =
       srcMatches && srcMatches.length > 1 ? srcMatches[1] : inputText;
