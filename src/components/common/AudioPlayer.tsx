@@ -11,6 +11,7 @@ interface AudioPlayerProps {
   src: string;
   initialLoop?: boolean;
   initialPlaybackRate?: number;
+  initialMuted?: boolean;
 }
 
 export interface AudioPlayerHandles {
@@ -25,10 +26,18 @@ export interface AudioPlayerHandles {
 }
 
 const AudioPlayer = forwardRef<AudioPlayerHandles, AudioPlayerProps>(
-  ({ src, initialLoop = false, initialPlaybackRate = 1.0 }, ref) => {
+  (
+    {
+      src,
+      initialLoop = false,
+      initialPlaybackRate = 1.0,
+      initialMuted = false,
+    },
+    ref
+  ) => {
     const [playing, setPlaying] = useState(false);
     const [loop, setLoop] = useState(initialLoop);
-    const [muted, setMuted] = useState(false);
+    const [muted, setMuted] = useState(initialMuted);
     const [playbackRate, setPlaybackRate] = useState(initialPlaybackRate);
     const playerRef = useRef<ReactHowler>(null);
 

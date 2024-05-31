@@ -224,6 +224,7 @@ export default function TimeLedger() {
               src={"/sounds/clock-tick.mp3"}
               initialLoop={true}
               initialPlaybackRate={0.9}
+              initialMuted={mute}
             />
             <div className="w-full  flex-grow rounded bg-orange-100 p-6 shadow-lg md:basis-1/3">
               {/* Task Title */}
