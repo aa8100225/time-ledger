@@ -1,5 +1,4 @@
 import Footer from "@/components/common/Footer";
-import { getTranslations } from "next-intl/server";
 
 interface Params {
   params: {
@@ -7,7 +6,7 @@ interface Params {
   };
 }
 
-export async function generateToolMetadata({ params: { locale } }: Params) {
+export async function generateMetadata({ params: { locale } }: Params) {
   return {
     description:
       "This tool is designed to effortlessly convert base64 encoded strings into images, supporting features like direct downloading and zoom-in previews. Ideal for extracting and transforming images from web elements, especially useful on sites that disable right-click functionality.",
