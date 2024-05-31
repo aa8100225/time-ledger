@@ -5,6 +5,8 @@ import { ReduxProvider } from "@/provider/reduxProvider";
 import ToastProvider from "@/provider/toastProvider";
 import { NextIntlClientProvider, useMessages } from "next-intl";
 import { NextUIProvider } from "@nextui-org/react";
+import { headers } from "next/headers";
+
 const inter = Inter({ subsets: ["latin"] });
 
 interface RootLayoutProps {
@@ -19,6 +21,7 @@ export default function RootLayout({
   params: { locale },
 }: Readonly<RootLayoutProps>) {
   const messages = useMessages();
+  const nonce = headers().get("x-nonce");
   return (
     <html lang={locale}>
       <ReduxProvider>
@@ -30,7 +33,9 @@ export default function RootLayout({
           </ToastProvider>
         </body>
       </ReduxProvider>
-      <GoogleAnalytics gaId={process.env.GAID!} />
+      <GoogleAnalytics
+        gaId={process.env.NEXT_PUBLIC_GA_ID ?? "cannot-get-id"}
+      />
     </html>
   );
 }
