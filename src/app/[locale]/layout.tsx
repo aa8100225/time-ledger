@@ -6,6 +6,7 @@ import ToastProvider from "@/provider/toastProvider";
 import { NextIntlClientProvider, useMessages } from "next-intl";
 import { NextUIProvider } from "@nextui-org/react";
 import { headers } from "next/headers";
+import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,6 +23,7 @@ export default function RootLayout({
 }: Readonly<RootLayoutProps>) {
   const messages = useMessages();
   const nonce = headers().get("x-nonce");
+
   return (
     <html lang={locale}>
       <ReduxProvider>
@@ -33,9 +35,30 @@ export default function RootLayout({
           </ToastProvider>
         </body>
       </ReduxProvider>
-      <GoogleAnalytics
-        gaId={process.env.NEXT_PUBLIC_GA_ID ?? "cannot-get-id"}
+
+      <Script
+        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID}`}
+        strategy="afterInteractive"
+        id="_next-ga"
+        nonce={nonce ?? "undefined"}
       />
+      <Script
+        id="_next-ga-init"
+        strategy="afterInteractive"
+        nonce={nonce ?? "undefined"}
+        dangerouslySetInnerHTML={{
+          __html: `
+          window['dataLayer'] = window['dataLayer'] || [];
+          function gtag(){window['dataLayer'].push(arguments);}
+          gtag('js', new Date());
+          gtag('config', '${process.env.NEXT_PUBLIC_GA_ID}');
+            `,
+        }}
+      />
+
+      {/* <GoogleAnalytics
+        gaId={process.env.NEXT_PUBLIC_GA_ID ?? "cannot-get-id"}
+      /> */}
     </html>
   );
 }
