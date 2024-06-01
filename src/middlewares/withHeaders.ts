@@ -16,7 +16,7 @@ export const withHeaders: MiddlewareFactory = (next: NextMiddleware) => {
       form-action 'self';
       frame-ancestors 'none';
       upgrade-insecure-requests;
-      connect-src 'self' https://www.googletagmanager.com;
+      connect-src 'self' https://www.googletagmanager.com https://www.google-analytics.com;
   `
       .replace(/\s{2,}/g, " ")
       .trim();
